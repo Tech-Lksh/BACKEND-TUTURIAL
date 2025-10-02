@@ -1,39 +1,24 @@
-{/* Beignner Level production server creation */}
-{/*
+{/* Import & Export */}
+{/* 
     
-const http = require('http')
+const add = require('./add.js');
+const  hello = require('./hello.js');
 
-const server = http.createServer( (req, res)=> {
-    if(req.url == "/about") {
-        res.end('The about page')
-    } 
+const  sum = add(2, 7) 
+console.log(sum);
 
-    if(req.url == "/profile") {
-        res.end('The profile page')
-    }
-
-    if(req.url == "/") {
-        res.end('The home page')
-    }
-})
-
-server.listen(3000)
-
+console.log('Heeheeee....!')
 */}
 
 
-{/* Production Level Server Creation */}
-const express = require('express');
-const app = express();
+{/* Multiple Require */}
+{/*
+    
+const add = require('./add')
 
-app.set('view engine', 'ejs')
+const sum = add.add(4, 7)
+const sumcopy = add.sub(4, 7)
+const sumsopa = add.mult(4, 7)
+console.log(sum, sumcopy, sumsopa)
 
-app.get('/', (req, res)=> {
-    res.render('index')
-})
-
-app.get('/about', (req, res)=> {
-    res.send('About Page')
-})
-
-app.listen(3000)
+*/}
