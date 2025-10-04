@@ -1,13 +1,12 @@
 {/* Import & Export */}
 {/* 
     
-const add = require('./add.js');
-const  hello = require('./hello.js');
+const add = require('../NODE.JS-TUTORIAL.......-/modules/add');
+const  hello = require('../NODE.JS-TUTORIAL.......-/modules/hello');
 
-const  sum = add(2, 7) 
+const  sum = add.add(2, 7) 
 console.log(sum);
 
-console.log('Heeheeee....!')
 */}
 
 
